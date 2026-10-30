@@ -33,18 +33,7 @@
 
 <img src="./assets/tools.svg" height="40" alt="tools i use" />
 
-<p>
-  <img src="https://img.shields.io/badge/Python-9a2a46?style=flat-square&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Java-c2602e?style=flat-square&logo=openjdk&logoColor=white" />
-  <img src="https://img.shields.io/badge/C%2B%2B-2f5f8f?style=flat-square&logo=cplusplus&logoColor=white" />
-  <img src="https://img.shields.io/badge/React-9a2a46?style=flat-square&logo=react&logoColor=white" />
-  <img src="https://img.shields.io/badge/Next.js-c2602e?style=flat-square&logo=nextdotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/Tailwind-2f5f8f?style=flat-square&logo=tailwindcss&logoColor=white" />
-  <img src="https://img.shields.io/badge/Arduino-9a2a46?style=flat-square&logo=arduino&logoColor=white" />
-  <img src="https://img.shields.io/badge/MATLAB-c2602e?style=flat-square" />
-  <img src="https://img.shields.io/badge/Git-2f5f8f?style=flat-square&logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/Vercel-9a2a46?style=flat-square&logo=vercel&logoColor=white" />
-</p>
+<p> <img src="https://img.shields.io/badge/Python-9a2a46?style=flat-square&logo=python&logoColor=white" /> <img src="https://img.shields.io/badge/C%2B%2B-c2602e?style=flat-square&logo=cplusplus&logoColor=white" /> <img src="https://img.shields.io/badge/TypeScript-2f5f8f?style=flat-square&logo=typescript&logoColor=white" /> <img src="https://img.shields.io/badge/JavaScript-9a2a46?style=flat-square&logo=javascript&logoColor=white" /> <img src="https://img.shields.io/badge/Java-c2602e?style=flat-square&logo=openjdk&logoColor=white" /> <img src="https://img.shields.io/badge/MATLAB-2f5f8f?style=flat-square" /> <br /> <img src="https://img.shields.io/badge/React-9a2a46?style=flat-square&logo=react&logoColor=white" /> <img src="https://img.shields.io/badge/Next.js-c2602e?style=flat-square&logo=nextdotjs&logoColor=white" /> <img src="https://img.shields.io/badge/Tailwind-2f5f8f?style=flat-square&logo=tailwindcss&logoColor=white" /> <img src="https://img.shields.io/badge/Claude%20API-9a2a46?style=flat-square&logo=anthropic&logoColor=white" /> <img src="https://img.shields.io/badge/pandas-c2602e?style=flat-square&logo=pandas&logoColor=white" /> <img src="https://img.shields.io/badge/Docker-2f5f8f?style=flat-square&logo=docker&logoColor=white" /> <img src="https://img.shields.io/badge/Git-9a2a46?style=flat-square&logo=git&logoColor=white" /> <img src="https://img.shields.io/badge/GitHub-c2602e?style=flat-square&logo=github&logoColor=white" /> <img src="https://img.shields.io/badge/Vercel-2f5f8f?style=flat-square&logo=vercel&logoColor=white" /> <br /> <img src="https://img.shields.io/badge/Arduino-9a2a46?style=flat-square&logo=arduino&logoColor=white" /> <img src="https://img.shields.io/badge/ESP32-c2602e?style=flat-square&logo=espressif&logoColor=white" /> <img src="https://img.shields.io/badge/Embedded%20C%2B%2B-2f5f8f?style=flat-square&logo=cplusplus&logoColor=white" /> </p>
 
 <img src="./assets/stats.svg" height="40" alt="stats" />
 
