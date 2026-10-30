@@ -15,6 +15,8 @@
     </linearGradient>
     <clipPath id="card"><rect width="900" height="260" rx="22"/></clipPath>
     <clipPath id="headClip"><circle cx="700" cy="122" r="27"/></clipPath>
+    <clipPath id="bodyClip2"><path d="M666 214 C 656 184, 664 154, 684 145 L 716 145 C 736 154, 744 184, 734 214 Z"/></clipPath>
+    <clipPath id="headClip2"><path d="M671 110 C 671 98, 686 93, 700 93 C 714 93, 729 98, 729 110 C 733 122, 728 134, 716 140 C 708 144, 692 144, 684 140 C 672 134, 667 122, 671 110 Z"/></clipPath>
     <clipPath id="bodyClip"><ellipse cx="700" cy="180" rx="35" ry="38"/></clipPath>
   </defs>
   <style>
@@ -33,9 +35,9 @@
     @keyframes blink { 0%,92%,100% { transform: scaleY(1) } 95% { transform: scaleY(.1) } }
     .heart { animation: float 3.2s ease-out infinite; }
     @keyframes float {
-      0%   { transform: translate(728px,84px) scale(.6); opacity: 0 }
+      0%   { transform: translate(726px,74px) scale(.6); opacity: 0 }
       15%  { opacity: 1 }
-      100% { transform: translate(744px,44px) scale(1.1); opacity: 0 }
+      100% { transform: translate(742px,36px) scale(1.1); opacity: 0 }
     }
   </style>
   <g clip-path="url(#card)">
@@ -74,51 +76,67 @@
     <rect x="600" y="214" width="200" height="10" rx="5" fill="#0d0b16"/>
     <rect x="618" y="224" width="164" height="40" fill="#1a0d1c"/>
 
-    <!-- tail -->
-    <path class="tail" d="M728 208 C 772 214, 784 176, 766 152" stroke="#11111b" stroke-width="10" stroke-linecap="round" fill="none"/>
+    <!-- tail: base stays still, the tip curls and uncurls slowly -->
+    <path d="M728 206 C 766 212, 782 186, 772 160 C 766 146, 756 146, 754 154" stroke="#16131c" stroke-width="10" stroke-linecap="round" fill="none">
+      <animate attributeName="d" dur="6s" repeatCount="indefinite" values="M728 206 C 766 212, 782 186, 772 160 C 766 146, 756 146, 754 154;M728 206 C 766 212, 780 188, 774 162 C 772 150, 780 142, 786 148;M728 206 C 766 212, 780 188, 774 162 C 772 150, 780 142, 786 148;M728 206 C 766 212, 782 186, 772 160 C 766 146, 756 146, 754 154;M728 206 C 766 212, 782 186, 772 160 C 766 146, 756 146, 754 154" keyTimes="0;0.25;0.4;0.65;1" calcMode="spline" keySplines=".45 0 .55 1;0 0 1 1;.45 0 .55 1;0 0 1 1"/>
+    </path>
 
     <!-- body -->
-    <ellipse cx="700" cy="180" rx="35" ry="38" fill="#f8f8fb"/>
-    <g clip-path="url(#bodyClip)">
-      <ellipse cx="732" cy="180" rx="14" ry="20" fill="#0d0b16"/>
-      <ellipse cx="686" cy="200" rx="30" ry="14" fill="#e3e3ec"/>
+    <path d="M666 214 C 656 184, 664 154, 684 145 L 716 145 C 736 154, 744 184, 734 214 Z" fill="#fbfaf7"/>
+    <g clip-path="url(#bodyClip2)">
+      <ellipse cx="732" cy="178" rx="13" ry="16" fill="#16131c" transform="rotate(-15 732 178)"/>
+      <ellipse cx="700" cy="218" rx="40" ry="10" fill="#e7e2dc"/>
     </g>
-    <!-- paws -->
-    <ellipse cx="688" cy="215" rx="9" ry="5" fill="#f8f8fb"/>
-    <ellipse cx="712" cy="215" rx="9" ry="5" fill="#f8f8fb"/>
+    <path d="M692 160 q4 5 8 0 q4 5 8 0" stroke="#e2ddd6" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <path d="M694 168 q3 4 6 0 q3 4 6 0" stroke="#e2ddd6" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+    <ellipse cx="687" cy="213" rx="10" ry="5.5" fill="#fbfaf7" stroke="#e2ddd6" stroke-width="1"/>
+    <ellipse cx="713" cy="213" rx="10" ry="5.5" fill="#fbfaf7" stroke="#e2ddd6" stroke-width="1"/>
+    <path d="M684 211 v4 M688 211 v4 M710 211 v4 M714 211 v4" stroke="#d6d0c8" stroke-width="1" stroke-linecap="round"/>
 
-    <!-- ears -->
-    <polygon points="676,112 678,82 696,100" fill="#0d0b16"/>
-    <polygon points="704,100 722,82 724,112" fill="#0d0b16"/>
-    <polygon points="680,104 681,89 691,99" fill="#f2a7b9"/>
-    <polygon points="709,99 719,89 720,104" fill="#f2a7b9"/>
+    <!-- tall upright ears -->
+    <path d="M672 108 C 668 92, 670 78, 674 72 C 684 78, 692 88, 696 96 Z" fill="#16131c"/>
+    <path d="M728 108 C 732 92, 730 78, 726 72 C 716 78, 708 88, 704 96 Z" fill="#16131c"/>
+    <path d="M675 100 C 673 90, 674 82, 676 78 C 682 82, 687 88, 690 94 Z" fill="#e8a3b4"/>
+    <path d="M725 100 C 727 90, 726 82, 724 78 C 718 82, 713 88, 710 94 Z" fill="#e8a3b4"/>
 
-    <!-- head with Nila's black cap and white stripe -->
-    <circle cx="700" cy="122" r="27" fill="#f8f8fb"/>
-    <g clip-path="url(#headClip)">
-      <ellipse cx="684" cy="107" rx="18" ry="18" fill="#0d0b16"/>
-      <ellipse cx="716" cy="107" rx="18" ry="18" fill="#0d0b16"/>
-      <path d="M697 92 L703 92 L705 122 L695 122 Z" fill="#f8f8fb"/>
+    <!-- head: wide cheeks, softer chin -->
+    <path d="M671 110 C 671 98, 686 93, 700 93 C 714 93, 729 98, 729 110 C 733 122, 728 134, 716 140 C 708 144, 692 144, 684 140 C 672 134, 667 122, 671 110 Z" fill="#fbfaf7"/>
+    <g clip-path="url(#headClip2)">
+      <path d="M660 88 L740 88 L740 114 C 730 111, 720 111, 713 114 C 708 108, 704 101, 702.5 94 L 697.5 94 C 696 101, 692 108, 687 114 C 680 111, 670 111, 660 114 Z" fill="#16131c"/>
     </g>
 
     <!-- collar -->
-    <path d="M680 143 Q700 152 720 143" stroke="#2f3d7a" stroke-width="5" fill="none" stroke-linecap="round"/>
-    <circle cx="700" cy="151" r="2.6" fill="#bac2de"/>
+    <path d="M681 142 Q700 151 719 142" stroke="#2a3a78" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <circle cx="700" cy="150" r="3" fill="#e8b84a"/>
 
-    <!-- eyes -->
-    <ellipse class="eye" cx="690" cy="122" rx="4.4" ry="5" fill="#d4d66a"/>
-    <ellipse class="eye" cx="710" cy="122" rx="4.4" ry="5" fill="#d4d66a"/>
-    <ellipse class="eye" cx="690" cy="122" rx="1.7" ry="4" fill="#0d0b16"/>
-    <ellipse class="eye" cx="710" cy="122" rx="1.7" ry="4" fill="#0d0b16"/>
+    <!-- almond eyes, tilted up at the outer corners -->
+    <g class="eye">
+      <ellipse cx="688" cy="120.5" rx="6.2" ry="5" fill="#b9c25a" transform="rotate(12 688 120.5)"/>
+      <ellipse cx="688.3" cy="120.8" rx="2.6" ry="4" fill="#1b1a12"/>
+      <circle cx="690" cy="118.8" r="1.5" fill="#ffffff"/>
+    </g>
+    <g class="eye">
+      <ellipse cx="712" cy="120.5" rx="6.2" ry="5" fill="#b9c25a" transform="rotate(-12 712 120.5)"/>
+      <ellipse cx="711.7" cy="120.8" rx="2.6" ry="4" fill="#1b1a12"/>
+      <circle cx="713.4" cy="118.8" r="1.5" fill="#ffffff"/>
+    </g>
 
-    <!-- black nose spot -->
-    <ellipse cx="697.5" cy="132" rx="3.6" ry="2.6" fill="#0d0b16"/>
-    <path d="M694 136 q3 2.5 6 0" stroke="#9399b2" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+    <ellipse cx="681" cy="130" rx="4" ry="2.2" fill="#f2a3b5" opacity=".45"/>
+    <ellipse cx="719" cy="130" rx="4" ry="2.2" fill="#f2a3b5" opacity=".45"/>
+
+    <!-- pink nose, her black spot on the right side, a little :3 smile -->
+    <path d="M697.8 127.6 h4.4 l-2.2 2.6 z" fill="#e48aa0"/>
+    <ellipse cx="704.8" cy="129.4" rx="2.4" ry="1.7" fill="#16131c" transform="rotate(-15 704.8 129.4)"/>
+    <path d="M700 130.2 v1.6 M700 131.8 q-1.6 2 -3.4 .4 M700 131.8 q1.6 2 3.4 .4" stroke="#8a7f86" stroke-width="1" fill="none" stroke-linecap="round"/>
+
+    <g stroke="#cfc8c0" stroke-width=".9" stroke-linecap="round" fill="none">
+      <path d="M684 130 Q674 127 664 127 M684 132.5 Q674 133 665 135"/>
+      <path d="M716 130 Q726 127 736 127 M716 132.5 Q726 133 735 135"/>
+    </g>
 
     <g class="heart"><path d="M0 3 C0 -1.5 5 -1.5 5 2.5 C5 -1.5 10 -1.5 10 3 C10 7 6 9.5 5 11.5 C4 9.5 0 7 0 3Z" fill="#e0506e"/></g>
 
-    <text x="56" y="112" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="46" font-weight="700" fill="#f0a24a">hi, i am aparna</text>
-    <text x="58" y="152" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="600" fill="#e0506e">computer science student at ut dallas</text>
-    <text x="58" y="182" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="17" fill="#7fa9d6">and this is my cat nila</text>
+    <text x="56" y="124" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="46" font-weight="700" fill="#f0a24a">hi, i am aparna</text>
+    <text x="58" y="164" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="600" fill="#7fa9d6">computer science student at <tspan fill="#e0506e">ut dallas</tspan></text>
   </g>
 </svg>
